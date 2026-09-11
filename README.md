@@ -4,6 +4,8 @@ On DoltgreSQL 1.3.1, `information_schema.triggers` answers `(0 rows)` for a trig
 fires on `INSERT`, and `pg_trigger` lists it. PostgreSQL 18.6 lists the same trigger in both catalogs: the
 view answers one row with trigger `t_report`, event `INSERT` and table `t`.
 
+Reported upstream: https://github.com/dolthub/doltgresql/issues/3330
+
 ## Reproduce it
 
 You need Docker and a POSIX shell: Linux, macOS, or Windows with WSL. The first run downloads the images.
